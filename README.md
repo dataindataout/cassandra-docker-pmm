@@ -1,7 +1,13 @@
 # cassandra-docker-pmm
 Dockerfile with Cassandra and pmm-client
 
-`docker-compose up -d`
+Best to start these separately:
+
+`docker-compose up -d pmm-data pmm-server`
+
+Then the seeds:
+
+`docker-compose up -d DC1C1 DC1C2 DC2C1 DC2C2`
 
 On the Cassandra nodes:
 
